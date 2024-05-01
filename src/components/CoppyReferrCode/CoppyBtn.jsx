@@ -29,12 +29,16 @@ const CopyToClipboardButton = ({ textToCopy }) => {
 
   return (
     <div>
-          <button onClick={(e) => {
-              e.preventDefault()
-              copyTextToClipboard(textToCopy)
-          }}>Copy</button>
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          copyTextToClipboard(textToCopy);
+        }}
+      >
+        Copy
+      </button>
       {copySuccess && (
-        <p style={{ color: "green" }}>Text copied to clipboard!</p>
+        <p style={{ color: "green" }}>Referrer's Code copied !</p>
       )}
     </div>
   );

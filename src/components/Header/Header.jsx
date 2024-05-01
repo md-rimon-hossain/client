@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -28,9 +29,9 @@ function Header() {
                 Bridge
               </a>
               <a
-                target="_self"
+          
                 className="group relative flex min-w-[80px] items-center  p-2  text-primary"
-                href="/entry"
+                href="/"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Mint Key</div>
@@ -42,7 +43,7 @@ function Header() {
               <a
                 target="_self"
                 className="group relative flex min-w-[80px] items-center  p-2 "
-                href="/referral"
+                href="/"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Referral</div>
@@ -51,7 +52,7 @@ function Header() {
               <a
                 target="_self"
                 className="group relative flex min-w-[80px] items-center  p-2 "
-                href="/inventory"
+                href="/"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Inventory</div>
@@ -60,7 +61,7 @@ function Header() {
               <a
                 target="_blank"
                 className="group relative flex min-w-[80px] items-center  p-2 "
-                href="https://alpha.gelios.io/"
+                href="/"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Explorer</div>

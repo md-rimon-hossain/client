@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 import CopyToClipboardButton from "./CoppyReferrCode/CoppyBtn";
 
 function MainApp() {
-  const [referrersCode, setReferrersCode] = useState("");
+  const [referrersCode, setReferrersCode] = useState("Referrer's Code here");
 
   return (
     <div className="flex h-screen flex-col justify-between">

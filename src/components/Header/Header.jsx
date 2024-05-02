@@ -138,7 +138,7 @@ function Header() {
                 onClick={() => setNavShow(!navShow)}
                 data-collapse-toggle="mobile-menu-2"
                 type="button"
-                className="ml-1 flex items-center rounded-lg p-2 text-sm text-primary lg:hidden "
+                className="ml-1 flex items-center rounded-lg p-2 text-sm text-[#FFB200] lg:hidden "
                 aria-controls="mobile-menu-2"
                 aria-expanded="false"
               >
@@ -207,12 +207,12 @@ function Header() {
           >
             <a
               target="_self"
-              className="group relative flex cursor-pointer items-center  p-2  text-primary"
+              className="group relative flex cursor-pointer items-center  p-2  text-[#f0bf4f]"
               href="/"
             >
               <div className="relative flex items-center justify-between gap-3">
                 <div>Mint Key</div>
-                <span className="absolute right-[-35px] top-[-5px] rounded-md bg-primary px-1 py-0 text-sm  text-white">
+                <span className="absolute right-[-35px] top-[-5px] rounded-md bg-[#FFB200] px-1 py-0 text-sm  text-white">
                   Hot
                 </span>
               </div>

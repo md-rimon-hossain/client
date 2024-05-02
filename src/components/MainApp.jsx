@@ -5,7 +5,18 @@ import CopyToClipboardButton from "./CoppyReferrCode/CoppyBtn";
 
 function MainApp() {
   const [referrersCode, setReferrersCode] = useState("Referrer's Code here");
+  const [quantity, setQuantity] = useState(1)
 
+  const increaseQuantity = () => {
+    
+    setQuantity((pre)=> pre + 1)
+  }
+  const decreaseQuantity = () => {
+    if (quantity !== 1) {
+    setQuantity((pre) => pre - 1);
+    }
+  }
+  
   return (
     <div className="flex h-screen flex-col justify-between">
       <div className="container mx-auto">
@@ -154,6 +165,7 @@ function MainApp() {
                                 <div>
                                   <div className="relative flex max-w-[8rem] items-center">
                                     <button
+                                      onClick={decreaseQuantity}
                                       type="button"
                                       className="0 h-11  rounded-s-lg bg-[#FFB200] p-3 text-white  focus:outline-none focus:ring-0 "
                                     >
@@ -176,13 +188,14 @@ function MainApp() {
                                     <input
                                       name="amount"
                                       type="number"
-                                      defaultValue={"1"}
+                                      value={quantity}
                                       min="1"
                                       max="100"
                                       id="amount"
                                       className="block h-11 w-full text-[#09090b] border-2 border-x-0 border-[#FFB200] text-center font-semibold text-dark2 hover:outline-none focus:border-primary  focus:outline-none focus:ring-0"
                                     />
                                     <button
+                                      onClick={increaseQuantity}
                                       type="button"
                                       className="h-11 rounded-r-lg bg-[#FFB200] p-3 text-white  focus:outline-none focus:ring-0 focus:ring-gray-100"
                                     >
@@ -207,14 +220,14 @@ function MainApp() {
                               </div>
                             </div>
                           </div>
-                          <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+                          <hr className="my-3 h-px border-0 bg-gray-200" />
                           <div>
                             <div className="pt-1">
                               <div>
                                 <div className="flex justify-between">
                                   <div>
                                     <p className="font-semibold">
-                                      1 x Gelios Entry Key
+                                      {quantity} x Gelios Entry Key
                                     </p>
                                     <p className="flex items-center gap-1 text-gray80">
                                       <div>0.00713</div>BTC per key
@@ -236,14 +249,14 @@ function MainApp() {
                                                 height="20"
                                                 decoding="async"
                                                 data-nimg="1"
-                                                src="/assets/images/tokens/btc.svg"
+                                                src="/assets/images/tokens/btc.png"
                                                 style={{ color: "transparent" }}
                                               />
                                             </div>
                                             <div className="font-semibold ">
-                                              Bitcoin
+                                              Etherium
                                             </div>
-                                            <svg
+                                            {/* <svg
                                               className="ms-3 h-2.5 w-2.5"
                                               aria-hidden="true"
                                               xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +270,7 @@ function MainApp() {
                                                 strokeWidth="2"
                                                 d="m1 1 4 4 4-4"
                                               ></path>
-                                            </svg>
+                                            </svg> */}
                                           </div>
                                         </button>
                                       </div>
@@ -270,7 +283,8 @@ function MainApp() {
                                     <div className="flex items-center gap-1">
                                       <div>
                                         <p className="font-semibold">
-                                          0.00713{" "}
+                                          {(Number(quantity) * 0.00713).toFixed(5)}
+                                          
                                         </p>
                                       </div>
                                       <p className="font-semibold"> BTC</p>
@@ -278,7 +292,7 @@ function MainApp() {
                                   </div>
                                 </div>
                               </div>
-                              <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+                              <hr className="my-3 h-px border-0 bg-gray-200 " />
                               <div className="my-4">
                                 <div className="pb-2">
                                   <label
@@ -326,7 +340,7 @@ function MainApp() {
                                   />
                                 </div>
                               </div>
-                              <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+                              <hr className="my-3 h-px border-0 bg-gray-200 " />
                               <div className="pb-2">
                                 <label htmlFor="refCode" className="capitalize">
                                   Referrer&apos;s Code
@@ -349,7 +363,7 @@ function MainApp() {
                                   textToCopy={referrersCode}
                                 />
                               </div>
-                              <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+                              <hr className="my-3 h-px border-0 bg-gray-200 " />
                               <div className="my-2 flex items-center">
                                 <input
                                   id="check_agree"
@@ -459,7 +473,7 @@ function MainApp() {
                             </div>
                           </div>
                         </div>
-                        <hr className="my-4 h-px divide-x-2 border-0 bg-gray-200 dark:bg-gray-700" />
+                        <hr className="my-4 h-px divide-x-2 border-0 bg-gray-200 " />
                         <div className="flex justify-between py-2">
                           <div>Total Reward Value</div>
                           <div className="text-right text-grayThird">

@@ -25,12 +25,12 @@ function Header() {
               className="hidden w-full items-center justify-between gap-5 lg:order-1 lg:flex lg:w-auto"
               id="mobile-menu-2"
             >
-              <a className="group text-base  font-medium  text-white" href="/">
+              <a className="group text-base  font-medium  text-white" href="#">
                 Bridge
               </a>
               <a
                 className="group relative flex min-w-[80px] items-center  p-2  text-[#f0bf4f]"
-                href="/"
+                href="#"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Mint Key</div>
@@ -40,36 +40,36 @@ function Header() {
                 </div>
               </a>
               <a
-                target="_self"
+                 
                 className="group relative flex min-w-[80px] items-center  p-2 "
-                href="/"
+                href="#"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Referral</div>
                 </div>
               </a>
               <a
-                target="_self"
+                 
                 className="group relative flex min-w-[80px] items-center  p-2 "
-                href="/"
+                href="#"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Inventory</div>
                 </div>
               </a>
               <a
-                target="_blank"
+                  
                 className="group relative flex min-w-[80px] items-center  p-2 "
-                href="/"
+                href="#"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Explorer</div>
                 </div>
               </a>
               <a
-                target="_blank"
+                  
                 className="group relative flex min-w-[80px] items-center  p-2 "
-                href="https://airdrop.gelios.io/"
+                href="#"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Airdrop</div>
@@ -88,8 +88,8 @@ function Header() {
                     <div className="text-xl font-bold">
                       {" "}
                       <a
-                        target="_blank"
-                        href="https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo"
+                          
+                        href="#"
                       >
                         <div className="flex items-center justify-center gap-2">
                           <div className="flex items-center justify-center gap-2">
@@ -206,9 +206,9 @@ function Header() {
             }  w-full items-center justify-between p-4 px-4 md:order-1 md:flex md:w-auto lg:hidden lg:px-6`}
           >
             <a
-              target="_self"
+               
               className="group relative flex cursor-pointer items-center  p-2  text-[#f0bf4f]"
-              href="/"
+              href="#"
             >
               <div className="relative flex items-center justify-between gap-3">
                 <div>Mint Key</div>
@@ -218,36 +218,36 @@ function Header() {
               </div>
             </a>
             <a
-              target="_self"
+               
               className="group relative flex cursor-pointer items-center  p-2 "
-              href="/"
+              href="#"
             >
               <div className="relative flex items-center justify-between gap-3">
                 <div>Referral</div>
               </div>
             </a>
             <a
-              target="_self"
+               
               className="group relative flex cursor-pointer items-center  p-2 "
-              href="/"
+              href="#"
             >
               <div className="relative flex items-center justify-between gap-3">
                 <div>Inventory</div>
               </div>
             </a>
             <a
-              target="_blank"
+                
               className="group relative flex cursor-pointer items-center  p-2 "
-              href="/"
+              href="#"
             >
               <div className="relative flex items-center justify-between gap-3">
                 <div>Explorer</div>
               </div>
             </a>
             <a
-              target="_blank"
+                
               className="group relative flex cursor-pointer items-center  p-2 "
-              href="/"
+              href="#"
             >
               <div className="relative flex items-center justify-between gap-3">
                 <div>Airdrop</div>

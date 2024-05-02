@@ -9,11 +9,11 @@ function Footer() {
             <img
               alt="Logo"
               loading="lazy"
-              width="133"
+              width="100"
               height="44"
               decoding="async"
               data-nimg="1"
-              src="/assets/images/logo/logo.svg"
+              src="/assets/images/logo/logo.png"
               style={{ color: "transparent" }}
             />
             <div className="hidden md:block">
@@ -21,7 +21,7 @@ function Footer() {
             </div>
           </div>
           <div className="flex items-center justify-center gap-5 py-2 md:py-0">
-            <a target="_blank" href="https://discord.gg/DY6TGjdNbQ">
+            <a target="_blank" href="#">
               <img
                 alt="discord"
                 loading="lazy"
@@ -33,7 +33,7 @@ function Footer() {
                 style={{ color: "transparent" }}
               />
             </a>
-            <a target="_blank" href="https://twitter.com/GeliosOfficial">
+            <a target="_blank" href="#">
               <img
                 alt="twitter"
                 loading="lazy"
@@ -45,7 +45,7 @@ function Footer() {
                 style={{ color: "transparent" }}
               />
             </a>
-            <a target="_blank" href="https://t.me/GeliosOfficial">
+            <a target="_blank" href="#">
               <img
                 alt="telegram"
                 loading="lazy"
@@ -57,7 +57,7 @@ function Footer() {
                 style={{ color: "transparent" }}
               />
             </a>
-            <a target="_blank" href="https://docs.gelios.io">
+            <a target="_blank" href="#">
               <img
                 alt="gitbook"
                 loading="lazy"
@@ -69,7 +69,7 @@ function Footer() {
                 style={{ color: "transparent" }}
               />
             </a>
-            <a target="_blank" href="https://geliosofficial.medium.com">
+            <a target="_blank" href="#">
               <img
                 alt="medium"
                 loading="lazy"
@@ -81,7 +81,7 @@ function Footer() {
                 style={{ color: "transparent" }}
               />
             </a>
-            <a target="_blank" href="https://www.youtube.com/@geliosofficial">
+            <a target="_blank" href="#">
               <img
                 alt="youtube"
                 loading="lazy"

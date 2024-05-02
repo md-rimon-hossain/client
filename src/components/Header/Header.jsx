@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
+const l = "#FFB200";
 function Header() {
   const [navShow, setNavShow] = useState(false)
   return (
@@ -13,12 +13,12 @@ function Header() {
                 <img
                   alt="Logo"
                   loading="lazy"
-                  width="133"
+                  width="100"
                   height="44"
                   decoding="async"
                   data-nimg="1"
                   className="mr-3"
-                  src="/assets/images/logo/logo.svg"
+                  src="/assets/images/logo/logo.png"
                   style={{ color: "transparent" }}
                 />
               </div>
@@ -31,12 +31,12 @@ function Header() {
                 Bridge
               </a>
               <a
-                className="group relative flex min-w-[80px] items-center  p-2  text-primary"
+                className="group relative flex min-w-[80px] items-center  p-2  text-[#f0bf4f]"
                 href="/"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div>Mint Key</div>
-                  <span className="absolute right-[-15px] top-[-5px] rounded-md bg-primary px-1 py-0 text-sm  text-white">
+                  <span className="absolute right-[-15px] top-[-5px] rounded-md bg-[#FFB200] px-1 py-0 text-sm  text-white">
                     Hot
                   </span>
                 </div>
@@ -137,43 +137,42 @@ function Header() {
             </div>
             <div>
               <button
-                onClick={()=> setNavShow(!navShow)}
+                onClick={() => setNavShow(!navShow)}
                 data-collapse-toggle="mobile-menu-2"
                 type="button"
                 className="ml-1 flex items-center rounded-lg p-2 text-sm text-primary lg:hidden "
                 aria-controls="mobile-menu-2"
                 aria-expanded="false"
               >
-                {!navShow ? 
+                {!navShow ? (
                   <>
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <svg
-                  className="hidden h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
+                    <svg
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clipRule="evenodd"
+                      ></path>
                     </svg>
-                    </>
-                  :
+                    <svg
+                      className="hidden h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </>
+                ) : (
                   <>
-
                     <svg
                       fill="#FD9623"
                       viewBox="0 0 460.775 460.775"
@@ -197,8 +196,8 @@ function Header() {
                         <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path>{" "}
                       </g>
                     </svg>
-              
-                  </>}
+                  </>
+                )}
               </button>
             </div>
           </div>

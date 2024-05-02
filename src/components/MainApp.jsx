@@ -36,7 +36,7 @@ function MainApp() {
                                   </div>
                                   <div
                                     data-tooltip-id="next-claim"
-                                    className="absolute left-0 top-0 z-20 rounded-full bg-[#FD9623] p-1.5 text-center text-xs font-medium leading-none text-dark2"
+                                    className="absolute left-0 top-0 z-20 rounded-full bg-[#FFB200] p-1.5 text-center text-xs font-medium leading-none text-dark2"
                                     style={{ width: "27.25%" }}
                                   ></div>
                                   <div
@@ -49,7 +49,7 @@ function MainApp() {
                                     Tier 11 - PROCESSING
                                   </div>
                                   <div
-                                    className="absolute left-0 top-0  rounded-full bg-[#e16b00] p-1.5 text-center text-xs font-medium leading-none text-dark2"
+                                    className="absolute left-0 top-0  rounded-full bg-[#FFB200] p-1.5 text-center text-xs font-medium leading-none text-dark2"
                                     style={{ width: "27.25%" }}
                                   ></div>
                                 </div>
@@ -155,7 +155,7 @@ function MainApp() {
                                   <div className="relative flex max-w-[8rem] items-center">
                                     <button
                                       type="button"
-                                      className="0 h-11  rounded-s-lg bg-primary p-3 text-white  focus:outline-none focus:ring-0 "
+                                      className="0 h-11  rounded-s-lg bg-[#FFB200] p-3 text-white  focus:outline-none focus:ring-0 "
                                     >
                                       <svg
                                         className="h-3 w-3 "
@@ -180,11 +180,11 @@ function MainApp() {
                                       min="1"
                                       max="100"
                                       id="amount"
-                                      className="block h-11 w-full text-[#09090b] border-2 border-x-0 border-primary text-center font-semibold text-dark2 hover:outline-none focus:border-primary  focus:outline-none focus:ring-0"
+                                      className="block h-11 w-full text-[#09090b] border-2 border-x-0 border-[#FFB200] text-center font-semibold text-dark2 hover:outline-none focus:border-primary  focus:outline-none focus:ring-0"
                                     />
                                     <button
                                       type="button"
-                                      className="h-11 rounded-r-lg bg-primary p-3 text-white  focus:outline-none focus:ring-0 focus:ring-gray-100"
+                                      className="h-11 rounded-r-lg bg-[#FFB200] p-3 text-white  focus:outline-none focus:ring-0 focus:ring-gray-100"
                                     >
                                       <svg
                                         className="h-3 w-3 "
@@ -345,7 +345,9 @@ function MainApp() {
                                   className="block h-[44px] w-full rounded-xl border-none bg-gray-200   placeholder:text-gray80 focus:border-none focus:outline-none focus:ring-0"
                                   data-gtm-form-interact-field-id="3"
                                 />
-                                <CopyToClipboardButton textToCopy={referrersCode } />
+                                <CopyToClipboardButton
+                                  textToCopy={referrersCode}
+                                />
                               </div>
                               <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
                               <div className="my-2 flex items-center">
@@ -353,7 +355,7 @@ function MainApp() {
                                   id="check_agree"
                                   type="checkbox"
                                   name="agree"
-                                  className="h-4 w-4 rounded border-primary  bg-transparent  text-primary  focus:bg-gelios focus:text-primary  focus:ring-0"
+                                  className="h-4 w-4 rounded border-[#FFB200]  bg-transparent  text-[#FFB200]  focus:bg-gelios focus:text-primary  focus:ring-0"
                                 />
                                 <label
                                   htmlFor="check_agree"
@@ -365,7 +367,7 @@ function MainApp() {
                                       target="_blank"
                                       href="https://docs.gelios.io/gelios-keys-and-nodes/node-station/entry-node-agreement"
                                     >
-                                      <span className="text-primary">
+                                      <span className="text-[#FFB200]">
                                         {" "}
                                         Entry Key Agreement
                                       </span>
@@ -475,7 +477,7 @@ function MainApp() {
                           </div>
                         </div>
                         <div className="-mx-3">
-                          <div className="bg-roi-card relative w-full rounded-3xl py-4">
+                          <div className="bg-[#b16b1f] relative w-full rounded-3xl py-4">
                             <div className=" mx-auto flex w-full items-center text-white">
                               <div className="w-full px-5">
                                 <div className="flex justify-between text-xl">

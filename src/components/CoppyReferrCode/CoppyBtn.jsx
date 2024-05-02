@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { CheckCheck, Copy } from "lucide-react";
 import { useState } from "react";
 
 const CopyToClipboardButton = ({ textToCopy }) => {
@@ -28,18 +29,19 @@ const CopyToClipboardButton = ({ textToCopy }) => {
   };
 
   return (
-    <div>
+    <div className="relative flex items-center justify-center pr-4 rounded-e-xl  bg-gray-200">
       <button
         onClick={(e) => {
           e.preventDefault();
           copyTextToClipboard(textToCopy);
         }}
       >
-        Copy
+        {copySuccess ? (
+          <CheckCheck className="text-[#FFB200]" />
+        ) : (
+          <Copy className="text-[#FFB200]" />
+        )}
       </button>
-      {copySuccess && (
-        <p style={{ color: "green" }}>Referrer&apos;s Code copied !</p>
-      )}
     </div>
   );
 };

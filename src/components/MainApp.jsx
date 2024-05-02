@@ -332,7 +332,7 @@ function MainApp() {
                                   Referrer&apos;s Code
                                 </label>
                               </div>
-                              <div className="relative">
+                              <div className="relative flex justify-between">
                                 <input
                                   name="refCode"
                                   placeholder=""
@@ -342,7 +342,7 @@ function MainApp() {
                                   value={referrersCode}
                                   type="text"
                                   id="refCode"
-                                  className="block h-[44px] w-full rounded-xl border-none bg-gray-200   placeholder:text-gray80 focus:border-none focus:outline-none focus:ring-0"
+                                  className="block  h-[44px] w-full  rounded-s-xl border-none bg-gray-200   placeholder:text-gray80 focus:border-none focus:outline-none focus:ring-0"
                                   data-gtm-form-interact-field-id="3"
                                 />
                                 <CopyToClipboardButton

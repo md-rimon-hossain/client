@@ -133,7 +133,7 @@ function MainApp() {
                                         <div className="break-words">
                                           4. If sold-out, unconfirmed
                                           transactions will be refunded to the
-                                          user's purchasing wallet.
+                                          user&apos;s purchasing wallet.
                                         </div>{" "}
                                       </div>
                                     </div>
@@ -329,7 +329,7 @@ function MainApp() {
                               <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
                               <div className="pb-2">
                                 <label htmlFor="refCode" className="capitalize">
-                                  Referrer's Code
+                                  Referrer&apos;s Code
                                 </label>
                               </div>
                               <div className="relative">

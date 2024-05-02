@@ -38,7 +38,7 @@ const CopyToClipboardButton = ({ textToCopy }) => {
         Copy
       </button>
       {copySuccess && (
-        <p style={{ color: "green" }}>Referrer's Code copied !</p>
+        <p style={{ color: "green" }}>Referrer&apos;s Code copied !</p>
       )}
     </div>
   );

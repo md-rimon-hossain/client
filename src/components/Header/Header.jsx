@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-const l = "#FFB200";
 function Header() {
   const [navShow, setNavShow] = useState(false)
   return (

@@ -17,7 +17,7 @@ function Footer() {
               style={{ color: "transparent" }}
             />
             <div className="hidden md:block">
-              ©2024 Gelios. All Rights Reserved
+              ©2024 Zonic. All Rights Reserved
             </div>
           </div>
           <div className="flex items-center justify-center gap-5 py-2 md:py-0">

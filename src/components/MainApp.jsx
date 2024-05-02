@@ -584,7 +584,7 @@ function MainApp() {
                                   height="20"
                                   decoding="async"
                                   data-nimg="1"
-                                  src="/assets/images/tokens/btc.svg"
+                                  src="/assets/images/tokens/btc.png"
                                   style={{ color: "transparent" }}
                                 />
                               </div>
@@ -620,7 +620,7 @@ function MainApp() {
                                   height="20"
                                   decoding="async"
                                   data-nimg="1"
-                                  src="/assets/images/tokens/btc.svg"
+                                  src="/assets/images/tokens/btc.png"
                                   style={{ color: "transparent" }}
                                 />
                               </div>
